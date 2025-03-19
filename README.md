@@ -1,6 +1,3 @@
-# MapReduce-K-means
-an implementation of the K-means algorithm done through a MapReduce framework, working on a simulated Hadoop distributed environment
-
 # K-Means MapReduce with Hadoop Streaming
 
 This repository demonstrates a mini project that implements a K-Means clustering algorithm using a simulated Hadoop MapReduce framework with Hadoop Streaming. The project is designed to run on Google Colab and includes notebooks, data files, and Python scripts.
