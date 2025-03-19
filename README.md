@@ -43,9 +43,12 @@ kmeans-mapreduce/
 
 2. **K-Means MapReduce Clustering (kmeans_mapreduce.ipynb):**
    - Installs and configures Hadoop and Java.
-   - Uses Hadoop Streaming to run MapReduce jobs with your `mapper.py` and `reducer.py`.
-   - Iteratively updates centroids until convergence (based on Within-Cluster Sum of Squares, WCSS) or maximum iterations are reached.
-   - Visualizes the final clusters and centroids.
+   - Hadoop Streaming Execution: Runs a Hadoop Streaming job that uses the provided `mapper.py` and `reducer.py` scripts to perform one iteration of the k‑means algorithm. Each iteration updates `centroids.txt` with the new centroids.
+   - Iterates until the relative change in the Within-Cluster Sum of Squares (WCSS) is below a specified threshold or until a maximum number of iterations is reached.
+   - Visualizes both the final clusters (based on computed centroids) and the true distributions from the labeled data.
+
+### To be done:
+- use the labeled data simulated to assess performance of the clustering, but this is debatable in utility as clustering can be done to detect clusters on data with no latent "labels"
 
 ## How to Run
 
