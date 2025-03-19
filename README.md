@@ -4,15 +4,24 @@ This repository demonstrates a mini project that implements a K-Means clustering
 
 ## Project Structure
 kmeans-mapreduce/
+
 ├── README.md
+
 ├── notebooks/
+
 │   ├── kmeans_mapreduce.ipynb    # Main notebook for clustering with Hadoop MapReduce
+
 │   └── drawdist.ipynb            # Notebook to generate, visualize, and export distributions
+
 ├── data/
+
 │   ├── data.txt                  # Unlabeled data points (CSV: x,y)
+
 │   └── data_with_labels.txt      # Data points with labels (CSV: x,y,label)
+
 └── scripts/
-    ├── mapper.py                 # Mapper script for K-Means clustering
+
+├── mapper.py                 # Mapper script for K-Means clustering
     └── reducer.py                # Reducer script for updating centroids and aggregating WCSS
 
 ## Dependencies
