@@ -21,8 +21,8 @@ kmeans-mapreduce/
 
 └── scripts/
 
-├── mapper.py                 # Mapper script for K-Means clustering
-    └── reducer.py                # Reducer script for updating centroids and aggregating WCSS
+├── mapper.py                 # Mapper script for K-Means clustering    
+└── reducer.py                # Reducer script for updating centroids and aggregating WCSS
 
 ## Dependencies
 
